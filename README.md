@@ -8,31 +8,31 @@ Java implemented utilities designed to [RFC6750](https://tools.ietf.org/html/rfc
 
 ### Auth Params
 * `realm`
-> _[RFC2617-1.2](https://tools.ietf.org/html/rfc2617#section-1.2)_
+    > _[RFC2617-1.2](https://tools.ietf.org/html/rfc2617#section-1.2)_
 RFC6750:
-> `The "realm" is OPTIONAL.`
-> `The "realm" attribute MUST NOT appear more than once.`
+    > `The "realm" is OPTIONAL.`<br/>
+    > `The "realm" attribute MUST NOT appear more than once.`
 
 * `scope`
-> _[RFC6749-3.3](https://tools.ietf.org/html/rfc6749#section-3.3)_
+    > _[RFC6749-3.3](https://tools.ietf.org/html/rfc6749#section-3.3)_
 RFC6750:
-> `The "scope" is OPTIONAL.`
-> `The "scope" attribute MUST NOT appear more than once.`
+    > `The "scope" is OPTIONAL.`<br/>
+    > `The "scope" attribute MUST NOT appear more than once.`
 
 ---
 
 #### Error state `auth-params`
 RFC6750 states:
-> `If the protected resource request included an access token and failed authentication, the resource server SHOULD include the "error" attribute to provide the client with the reason why the access request was declined.`
-(_Therfore these `auth-params` are optional._)
+> `If the protected resource request included an access token and failed authentication, the resource server SHOULD include the "error" attribute to provide the client with the reason why the access request was declined.`<br/>
+(_Therfore these `auth-params` are optional._)<br/>
 > `The "error", "error_description", and "error_uri" attributes MUST NOT appear more than once.`
 
 * `error`
-> _[RFC6749-A.7](https://tools.ietf.org/html/rfc6749#appendix-A.7)_
+    > _[RFC6749-A.7](https://tools.ietf.org/html/rfc6749#appendix-A.7)_
 * `error_description`
-> _[RFC6749-A.8](https://tools.ietf.org/html/rfc6749#appendix-A.8)_
+    > _[RFC6749-A.8](https://tools.ietf.org/html/rfc6749#appendix-A.8)_
 * `error_uri`
-> _[RFC6749-A.9](https://tools.ietf.org/html/rfc6749#appendix-A.9)_
+    > _[RFC6749-A.9](https://tools.ietf.org/html/rfc6749#appendix-A.9)_
 
 #### Other `auth-params`
 The `auth-params` listed so far are only the ones described in RFC6750.
