@@ -1,12 +1,12 @@
 # RFC6750 Java implementation
-Java implemented utilities designed to RFC6750 specifications.
+Java implemented utilities designed to [RFC6750](https://tools.ietf.org/html/rfc6750#section-3.1) specifications.
 
-[RFC6750](https://tools.ietf.org/html/rfc6750#section-3.1)
+---
 
 ## `WWW-Authenticate` Response Header
 > _[RFC2617](https://tools.ietf.org/html/rfc2617)_
 
-### `auth-params`
+### Auth Params
 * `realm`
 > _[RFC2617-1.2](https://tools.ietf.org/html/rfc2617#section-1.2)_
 RFC6750:
@@ -18,6 +18,8 @@ RFC6750:
 RFC6750:
 > `The "scope" is OPTIONAL.`
 > `The "scope" attribute MUST NOT appear more than once.`
+
+---
 
 #### Error state `auth-params`
 RFC6750 states:
